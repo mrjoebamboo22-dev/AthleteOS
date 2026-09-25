@@ -1,0 +1,234 @@
+{
+  "team": {
+    "id": "team-eagles",
+    "name": "Lincoln Eagles",
+    "sport": "football",
+    "ageGroup": "7th Grade",
+    "season": "2026"
+  },
+  "coach": {
+    "id": "coach-joe",
+    "name": "Coach Joe",
+    "role": "coach"
+  },
+  "athlete": {
+    "id": "athlete-tyler",
+    "preferredName": "Tyler M.",
+    "position": "OLB",
+    "jerseyNumber": "42",
+    "ageBand": "7th Grade"
+  },
+  "guardian": {
+    "id": "guardian-1",
+    "name": "Taylor M.",
+    "linkedAthleteId": "athlete-tyler"
+  },
+  "skill": {
+    "id": "skill-outside-contain",
+    "name": "Outside Contain",
+    "category": "tactical",
+    "goal": "Maintain outside leverage and force outside runs back toward defensive pursuit."
+  },
+  "issue": {
+    "id": "issue-gives-up-edge",
+    "name": "Gives up the outside edge",
+    "observableBehavior": "Crashes inside against sweep action and allows the ball carrier outside."
+  },
+  "diagnosticQuestions": [
+    {
+      "code": "UNDERSTANDS_FORCE",
+      "text": "Does the athlete understand force responsibility?",
+      "options": [
+        "yes",
+        "no",
+        "unsure"
+      ]
+    },
+    {
+      "code": "MOST_COMMON_BREAKDOWN",
+      "text": "What breakdown occurs most often?",
+      "options": [
+        "crashes_inside",
+        "loses_leverage",
+        "poor_pursuit_angle",
+        "missed_tackle"
+      ]
+    },
+    {
+      "code": "READ_KEY",
+      "text": "What does the athlete appear to watch first?",
+      "options": [
+        "assigned_read_key",
+        "ball",
+        "nearest_blocker",
+        "unsure"
+      ]
+    },
+    {
+      "code": "CONTACT_NEXT_PRACTICE",
+      "text": "Is contact permitted in the next practice?",
+      "options": [
+        "yes",
+        "no"
+      ]
+    }
+  ],
+  "possibleCauses": [
+    {
+      "code": "EYE_DISCIPLINE",
+      "name": "Eye discipline",
+      "explanation": "The athlete may be following the ball before securing outside leverage."
+    },
+    {
+      "code": "FORCE_RESPONSIBILITY",
+      "name": "Force-responsibility understanding",
+      "explanation": "The athlete may not fully understand the responsibility to protect the edge and force the runner inside."
+    },
+    {
+      "code": "LEVERAGE_FOOTWORK",
+      "name": "Leverage and footwork",
+      "explanation": "The athlete may be stepping inside before the runner commits."
+    }
+  ],
+  "successCriteria": [
+    {
+      "code": "MAINTAINS_OUTSIDE_LEVERAGE",
+      "label": "Maintains outside leverage"
+    },
+    {
+      "code": "STAYS_SQUARE",
+      "label": "Stays square during the read"
+    },
+    {
+      "code": "FORCES_RUNNER_INSIDE",
+      "label": "Forces the runner toward inside pursuit"
+    },
+    {
+      "code": "AVOIDS_PREMATURE_INSIDE_PURSUIT",
+      "label": "Avoids premature inside pursuit"
+    }
+  ],
+  "drills": [
+    {
+      "id": "drill-mirror-shuffle",
+      "title": "Mirror Shuffle",
+      "location": "home",
+      "contactLevel": "no_contact",
+      "sets": 3,
+      "repetitions": 10,
+      "minutes": 6,
+      "equipment": "Five-yard safe, flat space and one partner",
+      "instructions": [
+        "Begin square to the partner.",
+        "The partner moves laterally at a controlled pace.",
+        "Shuffle while keeping outside leverage and shoulders square.",
+        "Reset when leverage is lost."
+      ],
+      "coachingPoints": [
+        "Protect the edge first.",
+        "Do not cross the feet.",
+        "Stay square and patient.",
+        "Stop if the surface is unsafe or pain occurs."
+      ]
+    },
+    {
+      "id": "drill-force-fold",
+      "title": "Force and Fold Recognition",
+      "location": "practice",
+      "contactLevel": "progressive_non_contact_first",
+      "sets": 3,
+      "repetitions": 6,
+      "minutes": 8,
+      "equipment": "Cones, coach, ball carrier",
+      "instructions": [
+        "Align the athlete as the force player.",
+        "Coach presents inside or outside movement.",
+        "Athlete identifies the outside threat and maintains leverage.",
+        "Begin at walk-through pace and progress only under coach control."
+      ],
+      "coachingPoints": [
+        "Keep the outside shoulder free.",
+        "Force the run toward help.",
+        "Contact cannot be added automatically by the system."
+      ]
+    }
+  ],
+  "lesson": {
+    "id": "lesson-protect-edge",
+    "title": "Protect the Edge First",
+    "minutes": 3,
+    "cues": [
+      "Know your responsibility before the snap.",
+      "Keep the outside shoulder free.",
+      "Stay square as long as possible.",
+      "Force the runner toward teammates.",
+      "Do not chase the ball before protecting the edge."
+    ]
+  },
+  "quiz": {
+    "id": "quiz-outside-contain",
+    "title": "Outside Contain Check",
+    "questions": [
+      {
+        "id": "q1",
+        "text": "What is the force player's first responsibility against an outside run?",
+        "options": [
+          "Chase the ball immediately",
+          "Protect the outside edge",
+          "Follow the nearest blocker",
+          "Run directly toward the quarterback"
+        ],
+        "answer": 1,
+        "explanation": "The force player protects the edge and directs the runner back toward inside pursuit."
+      },
+      {
+        "id": "q2",
+        "text": "Which body position best supports outside contain?",
+        "options": [
+          "Turn shoulders inside immediately",
+          "Stay square with outside leverage",
+          "Cross the feet toward the ball",
+          "Stand upright and wait"
+        ],
+        "answer": 1,
+        "explanation": "Staying square with outside leverage keeps the athlete ready to react without surrendering the edge."
+      },
+      {
+        "id": "q3",
+        "text": "Where should the runner be directed?",
+        "options": [
+          "Toward the sideline",
+          "Back toward inside pursuit",
+          "Straight backward",
+          "Anywhere away from the coach"
+        ],
+        "answer": 1,
+        "explanation": "The defense is built to rally from the inside, so the force player directs the runner toward pursuit."
+      },
+      {
+        "id": "q4",
+        "text": "When should the force player attack inside?",
+        "options": [
+          "Before the runner commits",
+          "Only after protecting the edge and confirming the read",
+          "Every time the ball moves",
+          "Whenever a blocker appears"
+        ],
+        "answer": 1,
+        "explanation": "Protect the edge first, then react after the runner and blocking path declare."
+      },
+      {
+        "id": "q5",
+        "text": "What should stay free when setting the edge?",
+        "options": [
+          "Inside shoulder",
+          "Outside shoulder",
+          "Both hands behind the back",
+          "Back foot"
+        ],
+        "answer": 1,
+        "explanation": "Keeping the outside shoulder free helps prevent the runner from reaching the edge."
+      }
+    ]
+  }
+}
