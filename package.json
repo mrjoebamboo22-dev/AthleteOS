@@ -1,0 +1,13 @@
+{
+  "name": "athleteos-outside-contain-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dependency-free AthleteOS outside-contain vertical slice",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
